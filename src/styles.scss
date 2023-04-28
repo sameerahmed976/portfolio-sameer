@@ -277,10 +277,12 @@ p {
   background: url("/sun.svg") no-repeat center/cover;
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 }
 
 .theme__icon__dark {
   background: url("/moon.svg") no-repeat center/cover;
+  cursor: pointer;
   width: 2rem;
   height: 2rem;
 }
