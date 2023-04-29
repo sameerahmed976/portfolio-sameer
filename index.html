@@ -22,14 +22,26 @@
               <img src="/logo.svg" alt="logo" class="navbar__logo" />
               <h1 class="navbar__text">Sameer</h1>
             </a>
-
-            <ul class="navbar__links">
+            <ul class="navbar__links navbar__hide">
               <li><a href="/">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="overlay">
+              <button class="btn--close">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="navbar__links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
 
             <div class="navbar__align">
               <section class="menu">
@@ -152,11 +164,7 @@
         <div class="underline"></div>
         <section class="projects__container">
           <article class="projects__card">
-            <img
-              src="./public/Photo.png"
-              alt="project 1"
-              class="project__image"
-            />
+            <img src="/Photo.png" alt="project 1" class="project__image" />
 
             <div class="projects__btn__group">
               <a href="#" class="btn--demo">Live Demo</a>
@@ -166,11 +174,7 @@
             </div>
           </article>
           <article class="projects__card">
-            <img
-              src="./public/Photo.png"
-              alt="project 1"
-              class="project__image"
-            />
+            <img src="/Photo.png" alt="project 1" class="project__image" />
 
             <div class="projects__btn__group">
               <a href="#" class="btn--demo">Live Demo</a>
@@ -183,7 +187,99 @@
       </section>
 
       <!-- projects end -->
+
+      <!-- contact -->
+
+      <section class="contact" id="contact">
+        <h3 class="contact__title">Get In <strong>Touch</strong></h3>
+
+        <h2 class="contact__heading">Contact Me</h2>
+        <div class="underline"></div>
+        <form class="form">
+          <div class="form__group__container">
+            <div class="form__group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form__control"
+                required
+              />
+              <label for="name" class="form__floating">Name</label>
+            </div>
+            <div class="form__group">
+              <input
+                type="email"
+                name="name"
+                id="email"
+                class="form__control"
+                required
+              />
+              <label for="email" class="form__floating">email</label>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <textarea
+              name="textArea"
+              id="textArea"
+              cols="30"
+              rows="10"
+              class="form__textArea"
+              required
+            ></textarea>
+            <label for="textArea" class="form__floating__textArea"
+              >enter your message</label
+            >
+          </div>
+
+          <button class="btn btn--message" type="submit">Message</button>
+        </form>
+      </section>
+
+      <!-- contact end  -->
+
+      <div class="slide__top"><i class="fas fa-arrow-circle-up"></i></div>
     </main>
+
+    <footer class="footer">
+      <section class="footer__container">
+        <ul class="social__icons footer__center">
+          <li>
+            <a href="https://www.github.com" class="social__icon">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" class="social__icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" class="social__icon">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" class="social__icon">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer__links">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <p class="footer__text">
+          © <span class="date"></span> John Doe. All Rights Reserved
+        </p>
+      </section>
+    </footer>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

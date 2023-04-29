@@ -6,11 +6,47 @@ const menuIcon = document.querySelector(".menu");
 const themeIcon = document.querySelector(".theme__icon");
 const navbarLinks = document.querySelector(".navbar__links");
 
+const btnClose = document.querySelector(".btn--close");
+
+const overlay = document.querySelector(".overlay");
+
+btnClose?.addEventListener("click", () => {
+  overlay?.classList.remove("overlay__hide");
+});
+
 const links = document.querySelectorAll(".navbar__links li");
+
+const newDate = document.querySelector(".date");
+
+const slideTop = document.querySelector(".slide__top");
+
+// window.addEventListener("scroll", () => {
+//   console.log(window.innerHeight);
+//   if (window.scrollX > 80) {
+//     slideTop?.classList.add("slide__top__active");
+//   } else {
+//     slideTop?.classList.remove("slide__top__active");
+//   }
+// });
+
+slideTop?.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > 80) {
+    slideTop?.classList.add("slide__top__active");
+  } else {
+    slideTop?.classList.remove("slide__top__active");
+  }
+});
 
 links.forEach((link) => {
   link.parentElement?.addEventListener("click", () => {
-    link.parentElement?.classList.remove("navbar__links__active");
+    // console.log(link.parentElement?.parentElement);
+
+    link.parentElement?.parentElement?.classList.remove("overlay__hide");
 
     menuIcon?.classList.remove("active");
   });
@@ -19,8 +55,7 @@ links.forEach((link) => {
 const prefersColorScheme = window.matchMedia("(prefers-color-scheme : dark)");
 
 menuIcon?.addEventListener("click", () => {
-  menuIcon.classList.toggle("active");
-  navbarLinks?.classList.toggle("navbar__links__active");
+  overlay?.classList.add("overlay__hide");
 });
 
 const currentTheme = localStorage.getItem("theme");
@@ -53,3 +88,7 @@ themeIcon?.addEventListener("click", () => {
 
   localStorage.setItem("theme", theme);
 });
+
+/* date  */
+
+(newDate as HTMLElement).innerHTML = `${new Date().getFullYear()} `;
