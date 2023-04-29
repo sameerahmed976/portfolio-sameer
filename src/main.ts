@@ -17,17 +17,9 @@ btnClose?.addEventListener("click", () => {
 const links = document.querySelectorAll(".navbar__links li");
 
 const newDate = document.querySelector(".date");
+const header = document.querySelector(".header");
 
 const slideTop = document.querySelector(".slide__top");
-
-// window.addEventListener("scroll", () => {
-//   console.log(window.innerHeight);
-//   if (window.scrollX > 80) {
-//     slideTop?.classList.add("slide__top__active");
-//   } else {
-//     slideTop?.classList.remove("slide__top__active");
-//   }
-// });
 
 slideTop?.addEventListener("click", () => {
   document.body.scrollTop = 0;
@@ -37,8 +29,10 @@ slideTop?.addEventListener("click", () => {
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 80) {
     slideTop?.classList.add("slide__top__active");
+    header?.classList.add("header__fixed");
   } else {
     slideTop?.classList.remove("slide__top__active");
+    header?.classList.remove("header__fixed");
   }
 });
 

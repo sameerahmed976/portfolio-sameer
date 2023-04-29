@@ -213,12 +213,11 @@ p {
 
 // ! /* navbar */
 .navbar {
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: whitesmoke;
-  box-shadow: var(--box-shadow-1);
+  background-color: white;
   z-index: 2;
 
   /* navbar header */
@@ -294,6 +293,7 @@ p {
   }
   /*  navbar links end*/
 }
+
 /* navbar end */
 
 // ! /* theme icon */
@@ -316,6 +316,14 @@ p {
 
 .navbar__hide {
   display: none;
+}
+
+.header__fixed {
+  box-shadow: var(--box-shadow-1);
+  position: fixed;
+  width: 100%;
+  z-index: 20000;
+  margin-bottom: 3rem;
 }
 
 // ! /* slide up */
@@ -385,12 +393,15 @@ p {
     box-shadow: 0 2px 2px #000;
     max-width: 15rem;
     min-height: 20rem;
+    -o-object-fit: cover;
     object-fit: cover;
     border-radius: 0.5rem;
+    -webkit-filter: opacity(0.9);
     filter: opacity(0.9);
     transition: all 0.5s ease-in-out;
     &:hover {
       transform: scale(1.05);
+      -webkit-filter: opacity(1);
       filter: opacity(1);
     }
   }
@@ -420,7 +431,7 @@ p {
 
 .social__icon {
   font-size: 2rem;
-  color: black;
+  color: var(--text-color);
   transition: var(--transition-8);
   opacity: 0.8;
 
@@ -627,37 +638,17 @@ p {
 
 .form {
   max-width: 100%;
-
   padding-top: 2rem;
-
-  &__floating {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    margin-left: 0.8rem;
-    margin-top: -2.7rem;
-    background-color: white;
-    border-radius: 1rem;
-    padding: 0.4rem;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    color: var(--primary-color);
-  }
 
   &__control {
     position: relative;
     padding: 1rem 1rem;
     display: block;
     font-size: var(--font-size-h5);
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.267);
     border-radius: 0.2rem;
     transition: var(--transition-8);
     max-width: 300px;
-
-    &:focus + .form__floating {
-      transition: var(--transition-8);
-      margin-top: -4.3rem;
-    }
   }
 
   &__group__container {
@@ -673,28 +664,9 @@ p {
     padding: 1rem;
     resize: none;
     max-width: 300px;
-
     width: 100%;
     height: 12rem;
     font-size: var(--font-size-h4);
-    &:focus + .form__floating__textArea {
-      transition: var(--transition-8);
-      margin-top: -12.8rem;
-    }
-  }
-
-  &__floating__textArea {
-    position: absolute;
-    display: block;
-    position: absolute;
-    z-index: 1;
-    margin-left: 0.8rem;
-    margin-top: -11.5rem;
-    background-color: white;
-    border-radius: 1rem;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    color: var(--primary-color);
   }
 }
 
@@ -710,7 +682,7 @@ p {
 
 .footer {
   padding: 1rem 0;
-  background-color: whitesmoke;
+  background-color: var(--background-color);
   &__center {
     justify-content: center;
     padding: 1rem;
@@ -844,6 +816,8 @@ p {
     &__frontend,
     &__backend,
     &__tools {
+      height: -webkit-min-content;
+      height: -moz-min-content;
       height: min-content;
     }
   }
