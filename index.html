@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sameer Portfolio || Home</title>
     <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="./src/css/fontawesome-free-5.12.1-web/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -21,10 +25,10 @@
 
             <ul class="navbar__links">
               <li><a href="/">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#" class="resume">Resume</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="navbar__align">
@@ -40,6 +44,117 @@
         <!-- small navbar -->
       </nav>
     </header>
+
+    <main class="main">
+      <!-- hero  -->
+
+      <section class="hero">
+        <article class="hero__container">
+          <h1 class="hero__title">Hello, I'm</h1>
+          <h2 class="hero__name">Sameer</h2>
+          <p class="hero__text">
+            I am a full-stack Web Developer (MERN / MEAN Stack)
+          </p>
+
+          <button type="submit" class="btn btn--download">
+            Download Resume
+          </button>
+
+          <ul class="social__icons">
+            <li>
+              <a href="https://www.github.com" class="social__icon">
+                <i class="fab fa-github-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com" class="social__icon">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" class="social__icon">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" class="social__icon">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <section class="hero__image__container">
+          <img src="/Photo.png" alt="Sameer Photo" class="hero__image" />
+        </section>
+      </section>
+
+      <!-- hero end  -->
+
+      <!-- about -->
+      <section id="about" class="about">
+        <h1 class="about__title">About Me</h1>
+        <div class="underline"></div>
+        <article class="about__container">
+          <p>
+            Hello, I am Mohammed Sameer Ahmed and I am a web developer. I live
+            and work in somewhere warm. I spend most of my day, experimenting
+            with HTML, CSS and JavaScript (and its endless list of frameworks).
+            I enjoy coding and the challenge of learning something new everyday.
+          </p>
+        </article>
+      </section>
+      <!-- about end  -->
+
+      <!-- skills  -->
+      <section class="skills" id="skills">
+        <h2 class="skills__title">Skills and Tools</h2>
+        <div class="underline"></div>
+
+        <section class="skills__container">
+          <article class="skills__frontend">
+            <h2 class="skills__frontend__title">Frontend Tools</h2>
+            <div class="underline"></div>
+            <ul>
+              <li class="skills__check">React</li>
+              <li class="skills__check">Angular</li>
+              <li class="skills__check">Bootstrap</li>
+              <li class="skills__check">Html</li>
+              <li class="skills__check">Css</li>
+              <li class="skills__check">JavaScript</li>
+            </ul>
+          </article>
+          <article class="skills__backend">
+            <h2 class="skills__backend__title">Backend Tools</h2>
+            <div class="underline"></div>
+            <ul>
+              <li class="skills__check">Nodejs</li>
+              <li class="skills__check">Express.js</li>
+              <li class="skills__check">MongoDB</li>
+            </ul>
+          </article>
+
+          <article class="skills__tools">
+            <h2 class="skills__other__tools">Other Tools</h2>
+            <div class="underline"></div>
+            <ul>
+              <li class="skills__check">Git</li>
+              <li class="skills__check">Postman</li>
+            </ul>
+          </article>
+        </section>
+      </section>
+
+      <!-- skills end -->
+
+      <!-- projects -->
+      <section class="projects" id="projects">
+        <section class="projects__container">
+          <article class="projects__card"></article>
+        </section>
+      </section>
+
+      <!-- projects end -->
+    </main>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

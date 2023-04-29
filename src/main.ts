@@ -1,10 +1,20 @@
-import "./styles.scss";
+import "./css/styles.scss";
 
 /* menu button   */
 
 const menuIcon = document.querySelector(".menu");
 const themeIcon = document.querySelector(".theme__icon");
 const navbarLinks = document.querySelector(".navbar__links");
+
+const links = document.querySelectorAll(".navbar__links li");
+
+links.forEach((link) => {
+  link.parentElement?.addEventListener("click", () => {
+    link.parentElement?.classList.remove("navbar__links__active");
+
+    menuIcon?.classList.remove("active");
+  });
+});
 
 const prefersColorScheme = window.matchMedia("(prefers-color-scheme : dark)");
 
