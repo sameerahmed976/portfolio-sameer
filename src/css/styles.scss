@@ -455,8 +455,7 @@ p {
 // ! /* about */
 
 .about {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding: 4rem 0;
 
   &__title {
     margin-left: 1rem;
@@ -490,8 +489,7 @@ p {
 // ! /* about */
 
 .skills {
-  padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding: 4rem 0;
 
   &__title {
     margin-left: 1rem;
@@ -552,11 +550,16 @@ p {
 
 // ! /* projects */
 .projects {
-  padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding: 4rem 0;
 
   &__title {
     margin-left: 0.5rem;
+  }
+
+  &__image {
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
   }
 
   &__container {
@@ -621,7 +624,7 @@ p {
 // ! /* contact */
 
 .contact {
-  padding: 1rem;
+  padding: 4rem;
 
   &__title {
     color: var(--primary-color);
@@ -858,5 +861,9 @@ p {
 
   .navbar__text {
     font-size: var(--font-size-h2);
+  }
+
+  .about {
+    padding-top: 9rem;
   }
 }
