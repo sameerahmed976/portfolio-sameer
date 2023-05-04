@@ -4,7 +4,6 @@ import "./css/styles.scss";
 
 const menuIcon = document.querySelector(".menu");
 const themeIcon = document.querySelector(".theme__icon");
-const navbarLinks = document.querySelector(".navbar__links");
 
 const btnClose = document.querySelector(".btn--close");
 
@@ -37,12 +36,33 @@ window.addEventListener("scroll", function () {
 });
 
 links.forEach((link) => {
-  link.parentElement?.addEventListener("click", () => {
+  link.parentElement?.addEventListener("click", (e) => {
     // console.log(link.parentElement?.parentElement);
 
     link.parentElement?.parentElement?.classList.remove("overlay__hide");
 
     menuIcon?.classList.remove("active");
+
+    // console.log(e.target.getAttribute("href").slice(1));
+
+    const id = (e.target as HTMLInputElement).getAttribute("href")?.slice(1);
+    // const element = document.getElementById(id: string) : HTMLElement | null;
+    //
+
+    // @ts-ignore
+    const element = document.getElementById(id);
+
+    // console.log(element);
+
+    let position = (element as HTMLElement).offsetTop - 64;
+    console.log(position);
+
+    window.scrollTo({
+      left: 0,
+      // top: element.offsetTop,
+      top: position,
+      behavior: "smooth",
+    });
   });
 });
 
