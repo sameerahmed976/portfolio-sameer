@@ -29,12 +29,18 @@
 
   --transition-8: all 0.8s ease-in-out;
   /* colors */
-  --primary-color: #ff6000;
-  --secondary-color: #8b1874;
-  --tertiary-color: #b71375;
-  --accent-color: #f79540;
+  --primary-color: #1f8a70;
+  --secondary-color: #00425a;
+  --tertiary-color: #bfdb38;
+  --accent-color: #fc7300;
   --black-color: black;
-  --white-color: black;
+  --white-color: white;
+
+  --shades-1: #606e1cc5;
+  --shades-2: #dfed9cc7;
+  --shades-3: #7e3b00c0;
+  --shades-4: #fec699d8;
+  --shades-1: #99af2dc5;
 
   --btn-gradient: linear-gradient(220.55deg, #ffd439 0%, #ff7a00 100%);
 
@@ -52,6 +58,12 @@ body.dark__theme {
   --text-color: white;
 }
 
+.light__theme {
+  .hero {
+    background-color: var(--shades-1);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   /* defaults to dark theme */
   body {
@@ -59,6 +71,7 @@ body.dark__theme {
     --text-color: white;
     --btn-download: white;
   }
+
   body.light__theme {
     --background-color: white;
     --text-color: black;
@@ -191,7 +204,6 @@ p {
 //  ! /* menu */
 
 .menu {
-  background-color: var(--background-color);
   width: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -359,6 +371,7 @@ p {
   padding-top: 2rem;
   align-items: center;
   gap: 1rem;
+  padding-bottom: 3rem;
   &__container {
     padding: 0 1rem;
   }
@@ -413,8 +426,11 @@ p {
 
 .btn--download {
   margin: 1.5rem 0;
+  display: block;
+  width: 210px;
+  text-align: center;
   font-size: var(--font-size-h6);
-  padding: 1rem;
+  padding: 0.6rem 0.4rem;
   transition: var(--transition-8);
   color: var(--background-color);
   background-color: var(--text-color);
@@ -455,7 +471,7 @@ p {
 // ! /* about */
 
 .about {
-  padding: 4rem 0;
+  padding: 5rem 0;
 
   &__title {
     margin-left: 1rem;
@@ -486,14 +502,13 @@ p {
 
 /* skills */
 
-// ! /* about */
+// ! /* Skills */
 
 .skills {
-  padding: 4rem 0;
+  padding: 5rem 0;
 
   &__title {
     margin-left: 1rem;
-
     color: var(--primary-color);
     font-weight: bold;
   }
@@ -513,18 +528,11 @@ p {
   &__frontend,
   &__backend,
   &__tools {
-    box-shadow: 0 2px 1px #000;
     padding: 1rem;
     color: var(--secondary-color);
     max-width: 350px;
     transition: var(--transition-8);
-    background-color: var(--secondary-color);
-    color: whitesmoke;
-    &:hover,
-    &:hover,
-    &:hover {
-      background-color: blueviolet;
-    }
+    color: var(--text-color);
   }
 
   &__check {
@@ -550,22 +558,23 @@ p {
 
 // ! /* projects */
 .projects {
-  padding: 4rem 0;
+  padding: 5rem 0;
 
   &__title {
     margin-left: 0.5rem;
   }
 
   &__image {
-    height: 35rem;
+    height: 12rem;
     width: 100%;
-    object-fit: cover;
+    display: block;
+    max-width: 100%;
   }
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 260px));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 300px));
+    gap: 2rem;
     width: 98%;
     justify-content: center;
     margin: 0 auto;
@@ -577,6 +586,7 @@ p {
     padding: 0.2rem;
     cursor: pointer;
     transition: var(--transition-8);
+    max-width: 300px;
     &:hover {
       transform: scale(1.01);
     }
@@ -624,7 +634,9 @@ p {
 // ! /* contact */
 
 .contact {
-  padding: 4rem;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 5rem 0;
 
   &__title {
     color: var(--primary-color);
@@ -640,12 +652,13 @@ p {
 // !  /* form */
 
 .form {
-  max-width: 100%;
+  width: 90vw;
+  margin: 0 auto;
   padding-top: 2rem;
 
   &__control {
     position: relative;
-    padding: 1rem 1rem;
+    padding: 0.4rem 0.6rem;
     display: block;
     font-size: var(--font-size-h5);
     border: 1px solid rgba(128, 128, 128, 0.267);
@@ -787,7 +800,7 @@ p {
     min-width: 95%;
 
     &__container {
-      justify-content: stretch;
+      justify-content: center;
     }
   }
 
