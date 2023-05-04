@@ -495,6 +495,10 @@ p {
     font-weight: bold;
   }
 
+  &__content p {
+    margin-left: 1rem;
+  }
+
   &__container {
     padding: 1rem;
     font-size: var(--font-size-h5);
@@ -512,7 +516,7 @@ p {
   width: 6rem;
   height: 0.5rem;
   margin-left: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 /* underline end */
 
@@ -525,10 +529,17 @@ p {
   padding-top: 3rem;
   background-color: #585858;
 
+  &__content {
+    margin-left: 2rem;
+
+    .underline {
+      margin-bottom: 0rem;
+    }
+  }
   &__title {
-    margin-left: 1rem;
     color: var(--primary-color);
     font-weight: bold;
+    margin-left: 0.7rem;
   }
   &__container {
     padding: 1rem;
@@ -577,11 +588,12 @@ p {
   padding: 2rem 0;
   padding-top: 3rem;
   background-color: #000000;
+  margin-left: 2.1rem;
 
   &__title {
-    margin-left: 1rem;
     color: var(--primary-color);
     font-weight: bold;
+    margin-left: 1rem;
   }
 
   &__image {
@@ -595,9 +607,8 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 300px));
     gap: 2rem;
-    width: 98%;
+    width: 90%;
     justify-content: center;
-    margin: 0 auto;
     margin-top: 2rem;
   }
 
@@ -660,14 +671,20 @@ p {
 
   &__title {
     color: var(--primary-color);
-    margin-left: 1rem;
     font-weight: bold;
+    margin-left: 2rem;
   }
 
   &__heading {
-    margin-left: 1rem;
     font-weight: bold;
+    margin-left: 2rem;
     color: var(--secondary-color);
+  }
+
+  & {
+    .underline {
+      margin-left: 2rem;
+    }
   }
 }
 
@@ -826,10 +843,14 @@ p {
     grid-template-rows: 1fr auto;
   }
 
+  .skills__content {
+    margin-left: 4rem;
+  }
+
   .projects {
     min-width: 95%;
     &__container {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       justify-content: center;
     }
   }
@@ -840,6 +861,7 @@ p {
 
   .form {
     justify-content: start;
+    margin-left: 2rem;
   }
 }
 
@@ -879,6 +901,10 @@ p {
   }
 
   .skills {
+    &__content {
+      margin-left: 4.5rem;
+    }
+
     &__container {
       grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     }

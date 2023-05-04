@@ -37,12 +37,11 @@ window.addEventListener("scroll", function () {
 
 links.forEach((link) => {
   link.parentElement?.addEventListener("click", (e) => {
+    e.preventDefault();
     // console.log(link.parentElement?.parentElement);
-
     link.parentElement?.parentElement?.classList.remove("overlay__hide");
 
     menuIcon?.classList.remove("active");
-
     // console.log(e.target.getAttribute("href").slice(1));
 
     const id = (e.target as HTMLInputElement).getAttribute("href")?.slice(1);
@@ -54,7 +53,7 @@ links.forEach((link) => {
 
     // console.log(element);
 
-    let position = (element as HTMLElement).offsetTop - 64;
+    let position = (element as HTMLElement).offsetTop - 50;
     console.log(position);
 
     window.scrollTo({
