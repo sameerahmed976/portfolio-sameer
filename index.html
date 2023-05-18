@@ -1,279 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sameer Portfolio</title>
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="./src/css/fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sameer Portfolio</title>
-  <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="./src/css/fontawesome-free-5.12.1-web/css/all.min.css" />
-</head>
+  <body>
+    <header class="header">
+      <!-- header -->
+      <nav class="navbar">
+        <!-- small navbar -->
 
-<body>
-  <header class="header">
-    <!-- header -->
-    <nav class="navbar">
-      <!-- small navbar -->
-      <section class="navbar__small">
-        <section class="navbar__header">
-          <a href="/" class="navbar__link">
-            <img src="/logo.svg" alt="logo" class="navbar__logo" />
-            <h1 class="navbar__text">Sameer</h1>
-          </a>
-          <ul class="navbar__links navbar__hide">
+        <a href="/" class="navbar__link">
+          <h1 class="navbar__text">
+            Sam<span class="navbar__text2">eer</span>
+          </h1>
+        </a>
+
+        <div class="overlay">
+          <button class="btn--close">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="navbar__links">
             <li><a href="/">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+        </div>
 
-          <div class="overlay">
-            <button class="btn--close">
-              <i class="fas fa-times"></i>
-            </button>
-            <ul class="navbar__links">
-              <li><a href="/">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+        <div class="navbar__align">
+          <section class="menu">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+          </section>
+          <section class="theme__icon"></section>
+        </div>
+
+        <!-- small navbar -->
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- hero  -->
+
+      <section class="hero">
+        <section class="section__center hero__container">
+          <article class="hero__content">
+            <h1 class="hero__title">Hello, I'm</h1>
+            <h2 class="hero__name">Sameer</h2>
+            <p class="hero__text">
+              I am a full-stack Web Developer (MERN / MEAN Stack)
+            </p>
+
+            <a
+              href="/sameer_ahmed__resume__full_stack__mern__mean__developer.pdf"
+              download
+              class="btn btn--download"
+            >
+              Download Resume
+            </a>
+
+            <ul class="social__icons">
+              <li>
+                <a
+                  href="https://github.com/sameerahmed976"
+                  class="social__icon"
+                >
+                  <i class="fab fa-github-square"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mohammed-sameer-ahmed976/"
+                  class="social__icon"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/sameer.ahmed.9763"
+                  class="social__icon"
+                >
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/sameer_976/"
+                  class="social__icon"
+                >
+                  <i class="fab fa-instagram-square"></i>
+                </a>
+              </li>
             </ul>
-          </div>
-
-          <div class="navbar__align">
-            <section class="menu">
-              <div class="bar-1"></div>
-              <div class="bar-2"></div>
-              <div class="bar-3"></div>
-            </section>
-            <section class="theme__icon"></section>
-          </div>
-        </section>
-      </section>
-      <!-- small navbar -->
-    </nav>
-  </header>
-
-  <main class="main">
-    <!-- hero  -->
-
-    <section class="hero">
-
-      <section class="section__center hero__container">
-        <article class="hero__content">
-          <h1 class="hero__title">Hello, I'm</h1>
-          <h2 class="hero__name">Sameer</h2>
-          <p class="hero__text">
-            I am a full-stack Web Developer (MERN / MEAN Stack)
-          </p>
-
-          <a href="/sameer_ahmed__resume__full_stack__mern__mean__developer.pdf" download class="btn btn--download">
-            Download Resume
-          </a>
-
-          <ul class="social__icons">
-            <li>
-              <a href="https://github.com/sameerahmed976" class="social__icon">
-                <i class="fab fa-github-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/mohammed-sameer-ahmed976/" class="social__icon">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/sameer.ahmed.9763" class="social__icon">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/sameer_976/" class="social__icon">
-                <i class="fab fa-instagram-square"></i>
-              </a>
-            </li>
-          </ul>
-
-        </article>
-        <section class="hero__image__container">
-          <img src="/Photo.png" alt="Sameer Photo" class="hero__image" />
-        </section>
-      </section>
-
-
-    </section>
-
-    <!-- hero end  -->
-
-    <!-- about -->
-    <section id="about" class="about">
-      <section class="section__center about__container">
-        <article class="about__content">
-          <h1 class="about__title">About Me</h1>
-          <div class="underline"></div>
-          <p>
-            Hello, I am Mohammed Sameer Ahmed and I am a web developer. I live
-            and work in somewhere warm. I spend most of my day, experimenting
-            with HTML, CSS and JavaScript (and its endless list of frameworks).
-            I enjoy coding and the challenge of learning something new everyday.
-          </p>
-        </article>
-      </section>
-    </section>
-    <!-- about end  -->
-
-    <!-- skills  -->
-    <section class="skills" id="skills">
-
-      <section class="skills__content">
-        <h2 class="skills__title">Skills and Tools</h2>
-        <div class="underline"></div>
-      </section>
-      <section class="section__center skills__container">
-
-
-        <article class="skills__frontend">
-          <h2 class="skills__frontend__title">Frontend Tools</h2>
-          <div class="underline"></div>
-          <ul>
-            <li class="skills__check">React</li>
-            <li class="skills__check">Angular</li>
-            <li class="skills__check">Bootstrap</li>
-            <li class="skills__check">Html</li>
-            <li class="skills__check">Css</li>
-            <li class="skills__check">JavaScript</li>
-          </ul>
-        </article>
-        <article class="skills__backend">
-          <h2 class="skills__backend__title">Backend Tools</h2>
-          <div class="underline"></div>
-          <ul>
-            <li class="skills__check">Nodejs</li>
-            <li class="skills__check">Express.js</li>
-            <li class="skills__check">MongoDB</li>
-          </ul>
-        </article>
-
-        <article class="skills__tools">
-          <h2 class="skills__other__tools">Other Tools</h2>
-          <div class="underline"></div>
-          <ul>
-            <li class="skills__check">Git</li>
-            <li class="skills__check">Postman</li>
-          </ul>
-        </article>
-
-      </section>
-
-    </section>
-
-    <!-- skills end -->
-
-    <!-- projects -->
-    <section class="projects" id="projects">
-
-      <section class="section__center ">
-        <h2 class="projects__title">My Personal Projects</h2>
-        <div class="underline"></div>
-        <section class="projects__container">
-          <article class="projects__card">
-            <img src="/frontend__bootcamp.png" alt="project 1" class="projects__image" />
-
-            <div class="projects__btn__group">
-              <a href="https://frontend-bootcamp-bootstrap5.vercel.app/" target="_blank" class="btn--demo">Live Demo</a>
-              <a href="https://github.com/sameerahmed976/frontend-bootcamp-bootstrap5" target="_blank"
-                class="btn--code">
-
-
-                <i class="fab fa-github-square btn--github"></i> Source Code</a>
-            </div>
           </article>
-          <article class="projects__card">
-            <img src="/resume-sameer.png" alt="sameer resume" class="projects__image" />
+          <section class="hero__image__container">
+            <img src="/Photo.png" alt="Sameer Photo" class="hero__image" />
+          </section>
+        </section>
+      </section>
 
-            <div class="projects__btn__group">
-              <a href="https://resume-sameer.netlify.app/" target="_blank" class="btn--demo">Live Demo</a>
-              <a href="https://github.com/sameerahmed976/resume-sameer" target="_blank" class="btn--code">
-                <i class="fab fa-github-square btn--github"></i> Source Code</a>
-            </div>
+      <!-- hero end  -->
+
+      <!-- about -->
+      <section id="about" class="about">
+        <section class="section__center about__container">
+          <article class="about__content">
+            <h1 class="about__title">About Me</h1>
+            <div class="underline"></div>
+            <p>
+              Hello, I am Mohammed Sameer Ahmed and I am a web developer. I live
+              and work in somewhere warm. I spend most of my day, experimenting
+              with HTML, CSS and JavaScript (and its endless list of
+              frameworks). I enjoy coding and the challenge of learning
+              something new everyday.
+            </p>
           </article>
         </section>
+      </section>
+      <!-- about end  -->
 
+      <!-- skills  -->
+      <section class="skills" id="skills">
+        <section class="skills__content">
+          <h2 class="skills__title">Skills and Tools</h2>
+          <div class="underline"></div>
+        </section>
+        <section class="section__center skills__container">
+          <article class="skills__frontend">
+            <h2 class="skills__frontend__title">Frontend Tools</h2>
+            <div class="underline"></div>
+            <ul>
+              <li class="skills__check">React</li>
+              <li class="skills__check">Angular</li>
+              <li class="skills__check">Bootstrap</li>
+              <li class="skills__check">Html</li>
+              <li class="skills__check">Css</li>
+              <li class="skills__check">JavaScript</li>
+            </ul>
+          </article>
+          <article class="skills__backend">
+            <h2 class="skills__backend__title">Backend Tools</h2>
+            <div class="underline"></div>
+            <ul>
+              <li class="skills__check">Nodejs</li>
+              <li class="skills__check">Express.js</li>
+              <li class="skills__check">MongoDB</li>
+            </ul>
+          </article>
+
+          <article class="skills__tools">
+            <h2 class="skills__other__tools">Other Tools</h2>
+            <div class="underline"></div>
+            <ul>
+              <li class="skills__check">Git</li>
+              <li class="skills__check">Postman</li>
+            </ul>
+          </article>
+        </section>
       </section>
 
+      <!-- skills end -->
 
+      <!-- projects -->
+      <section class="projects" id="projects">
+        <section class="section__center">
+          <h2 class="projects__title">My Personal Projects</h2>
+          <div class="underline"></div>
+          <section class="projects__container">
+            <article class="projects__card">
+              <img
+                src="/frontend__bootcamp.png"
+                alt="project 1"
+                class="projects__image"
+              />
 
-    </section>
+              <div class="projects__btn__group">
+                <a
+                  href="https://frontend-bootcamp-bootstrap5.vercel.app/"
+                  target="_blank"
+                  class="btn--demo"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/sameerahmed976/frontend-bootcamp-bootstrap5"
+                  target="_blank"
+                  class="btn--code"
+                >
+                  <i class="fab fa-github-square btn--github"></i> Source
+                  Code</a
+                >
+              </div>
+            </article>
+            <article class="projects__card">
+              <img
+                src="/resume-sameer.png"
+                alt="sameer resume"
+                class="projects__image"
+              />
 
-    <!-- projects end -->
-
-    <!-- contact -->
-
-    <section class="contact" id="contact">
-
-      <section class="section__center">
-
-        <h3 class="contact__title">Get In <strong>Touch</strong></h3>
-
-        <h2 class="contact__heading">Contact Me</h2>
-        <div class="underline"></div>
-        <form class="form" action="https://formspree.io/f/xgebwqvy" method="POST">
-          <div class="form__group__container">
-            <div class="form__group">
-              <input type="text" name="name" id="name" class="form__control" placeholder="enter your name" required />
-            </div>
-            <div class="form__group">
-              <input type="email" name="email" id="email" class="form__control" placeholder="enter your email"
-                required />
-            </div>
-          </div>
-
-          <div class="form__group">
-            <textarea name="textArea" id="textArea" cols="30" rows="10" class="form__textArea" name="message"
-              placeholder="enter your message" required></textarea>
-          </div>
-
-          <button class="btn btn--message" type="submit">Message</button>
-        </form>
+              <div class="projects__btn__group">
+                <a
+                  href="https://resume-sameer.netlify.app/"
+                  target="_blank"
+                  class="btn--demo"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/sameerahmed976/resume-sameer"
+                  target="_blank"
+                  class="btn--code"
+                >
+                  <i class="fab fa-github-square btn--github"></i> Source
+                  Code</a
+                >
+              </div>
+            </article>
+          </section>
+        </section>
       </section>
 
+      <!-- projects end -->
 
+      <!-- contact -->
 
-    </section>
+      <section class="contact" id="contact">
+        <section class="section__center">
+          <h3 class="contact__title">Get In <strong>Touch</strong></h3>
 
-    <!-- contact end  -->
+          <h2 class="contact__heading">Contact Me</h2>
+          <div class="underline"></div>
+          <form
+            class="form"
+            action="https://formspree.io/f/xgebwqvy"
+            method="POST"
+          >
+            <div class="form__group__container">
+              <div class="form__group">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__control"
+                  placeholder="enter your name"
+                  required
+                />
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form__control"
+                  placeholder="enter your email"
+                  required
+                />
+              </div>
+            </div>
 
-    <div class="slide__top"><i class="fas fa-arrow-circle-up"></i></div>
-  </main>
+            <div class="form__group">
+              <textarea
+                name="textArea"
+                id="textArea"
+                cols="30"
+                rows="10"
+                class="form__textArea"
+                name="message"
+                placeholder="enter your message"
+                required
+              ></textarea>
+            </div>
 
-  <footer class="footer">
-    <section class="footer__container">
-      <ul class="social__icons footer__center">
-        <li>
-          <a href="https://github.com/sameerahmed976" class="social__icon">
-            <i class="fab fa-github-square"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/mohammed-sameer-ahmed976/" class="social__icon">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/sameer.ahmed.9763" class="social__icon">
-            <i class="fab fa-facebook-square"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/sameer_976/" class="social__icon">
-            <i class="fab fa-instagram-square"></i>
-          </a>
-        </li>
-      </ul>
+            <button class="btn btn--message" type="submit">Message</button>
+          </form>
+        </section>
+      </section>
 
-      <!-- 
+      <!-- contact end  -->
+
+      <div class="slide__top"><i class="fas fa-arrow-circle-up"></i></div>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__container">
+        <ul class="social__icons footer__center">
+          <li>
+            <a href="https://github.com/sameerahmed976" class="social__icon">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mohammed-sameer-ahmed976/"
+              class="social__icon"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/sameer.ahmed.9763"
+              class="social__icon"
+            >
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/sameer_976/"
+              class="social__icon"
+            >
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- 
       <ul class="footer__links">
         <li><a href="/">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -282,13 +335,12 @@
         <li><a href="#contact">Contact</a></li>
       </ul> -->
 
-      <p class="footer__text">
-        © <span class="date"></span> Built By Sameer. All Rights Reserved
-      </p>
-    </section>
-  </footer>
+        <p class="footer__text">
+          © <span class="date"></span> Built By Sameer. All Rights Reserved
+        </p>
+      </section>
+    </footer>
 
-  <script type="module" src="/src/main.ts"></script>
-</body>
-
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

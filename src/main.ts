@@ -13,8 +13,6 @@ btnClose?.addEventListener("click", () => {
   overlay?.classList.remove("overlay__hide");
 });
 
-const links = document.querySelectorAll(".navbar__links li");
-
 const newDate = document.querySelector(".date");
 const header = document.querySelector(".header");
 
@@ -33,36 +31,6 @@ window.addEventListener("scroll", function () {
     slideTop?.classList.remove("slide__top__active");
     header?.classList.remove("header__fixed");
   }
-});
-
-links.forEach((link) => {
-  link.parentElement?.addEventListener("click", (e) => {
-    e.preventDefault();
-    // console.log(link.parentElement?.parentElement);
-    link.parentElement?.parentElement?.classList.remove("overlay__hide");
-
-    menuIcon?.classList.remove("active");
-    // console.log(e.target.getAttribute("href").slice(1));
-
-    const id = (e.target as HTMLInputElement).getAttribute("href")?.slice(1);
-    // const element = document.getElementById(id: string) : HTMLElement | null;
-    //
-
-    // @ts-ignore
-    const element = document.getElementById(id);
-
-    // console.log(element);
-
-    let position = (element as HTMLElement).offsetTop - 50;
-    console.log(position);
-
-    window.scrollTo({
-      left: 0,
-      // top: element.offsetTop,
-      top: position,
-      behavior: "smooth",
-    });
-  });
 });
 
 const prefersColorScheme = window.matchMedia("(prefers-color-scheme : dark)");
