@@ -13,47 +13,85 @@
   </head>
 
   <body>
-    <header class="header">
+    <header id="home">
       <!-- header -->
       <nav class="navbar">
-        <!-- small navbar -->
+        <!--  navbar -->
 
-        <a href="/" class="navbar__link">
-          <h1 class="navbar__text">
-            Sam<span class="navbar__text2">eer</span>
-          </h1>
-        </a>
+        <div class="nav-center">
+          <div class="nav-header">
+            <a href="/" class="navbar__link">
+              <h1 class="navbar__text">
+                Sam<span class="navbar__text2">eer</span>
+              </h1>
+            </a>
 
-        <div class="overlay">
-          <button class="btn--close">
-            <i class="fas fa-times"></i>
-          </button>
-          <ul class="navbar__links">
-            <li><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+            <div class="navbar__align">
+              <section class="menu">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+              </section>
 
-        <div class="navbar__align">
-          <section class="menu">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-            <div class="bar-3"></div>
-          </section>
-          <section class="theme__icon"></section>
+              <div class="overlay">
+                <button class="btn--close">
+                  <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar__links">
+                  <li><a href="#home" class="scroll__link">Home</a></li>
+                  <li><a href="#about" class="scroll__link">About</a></li>
+                  <li><a href="#skills" class="scroll__link">Skills</a></li>
+                  <li><a href="#projects" class="scroll__link">Projects</a></li>
+                  <li><a href="#contact" class="scroll__link">Contact</a></li>
+                </ul>
+
+                <ul class="navbar__social__icons">
+                  <li>
+                    <a
+                      href="https://github.com/sameerahmed976"
+                      class="social__icon"
+                    >
+                      <i class="fab fa-github-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/mohammed-sameer-ahmed976/"
+                      class="social__icon"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/sameer.ahmed.9763"
+                      class="social__icon"
+                    >
+                      <i class="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/sameer_976/"
+                      class="social__icon"
+                    >
+                      <i class="fab fa-instagram-square"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <section class="theme__icon"></section>
+            </div>
+          </div>
         </div>
 
         <!-- small navbar -->
       </nav>
-    </header>
 
-    <main class="main">
       <!-- hero  -->
 
-      <section class="hero">
+      <section class="section hero">
         <section class="section__center hero__container">
           <article class="hero__content">
             <h1 class="hero__title">Hello, I'm</h1>
@@ -70,11 +108,11 @@
               Download Resume
             </a>
 
-            <ul class="social__icons">
+            <ul class="social__icons__resume">
               <li>
                 <a
                   href="https://github.com/sameerahmed976"
-                  class="social__icon"
+                  class="resume__icons"
                 >
                   <i class="fab fa-github-square"></i>
                 </a>
@@ -82,7 +120,7 @@
               <li>
                 <a
                   href="https://www.linkedin.com/in/mohammed-sameer-ahmed976/"
-                  class="social__icon"
+                  class="resume__icons"
                 >
                   <i class="fab fa-linkedin"></i>
                 </a>
@@ -90,7 +128,7 @@
               <li>
                 <a
                   href="https://www.facebook.com/sameer.ahmed.9763"
-                  class="social__icon"
+                  class="resume__icons"
                 >
                   <i class="fab fa-facebook-square"></i>
                 </a>
@@ -98,7 +136,7 @@
               <li>
                 <a
                   href="https://www.instagram.com/sameer_976/"
-                  class="social__icon"
+                  class="resume__icons"
                 >
                   <i class="fab fa-instagram-square"></i>
                 </a>
@@ -112,14 +150,19 @@
       </section>
 
       <!-- hero end  -->
+    </header>
 
+    <main class="main">
       <!-- about -->
-      <section id="about" class="about">
+      <section id="about" class="about section">
+        <section class="section__title">
+          <h1 class="about__title">About Me</h1>
+          <div class="underline"></div>
+        </section>
+
         <section class="section__center about__container">
           <article class="about__content">
-            <h1 class="about__title">About Me</h1>
-            <div class="underline"></div>
-            <p>
+            <p class="about__text">
               Hello, I am Mohammed Sameer Ahmed and I am a web developer. I live
               and work in somewhere warm. I spend most of my day, experimenting
               with HTML, CSS and JavaScript (and its endless list of
@@ -132,15 +175,15 @@
       <!-- about end  -->
 
       <!-- skills  -->
-      <section class="skills" id="skills">
-        <section class="skills__content">
+      <section class="section skills" id="skills">
+        <section class="section__title">
           <h2 class="skills__title">Skills and Tools</h2>
           <div class="underline"></div>
         </section>
+
         <section class="section__center skills__container">
           <article class="skills__frontend">
             <h2 class="skills__frontend__title">Frontend Tools</h2>
-            <div class="underline"></div>
             <ul>
               <li class="skills__check">React</li>
               <li class="skills__check">Angular</li>
@@ -152,7 +195,6 @@
           </article>
           <article class="skills__backend">
             <h2 class="skills__backend__title">Backend Tools</h2>
-            <div class="underline"></div>
             <ul>
               <li class="skills__check">Nodejs</li>
               <li class="skills__check">Express.js</li>
@@ -162,7 +204,6 @@
 
           <article class="skills__tools">
             <h2 class="skills__other__tools">Other Tools</h2>
-            <div class="underline"></div>
             <ul>
               <li class="skills__check">Git</li>
               <li class="skills__check">Postman</li>
@@ -174,57 +215,69 @@
       <!-- skills end -->
 
       <!-- projects -->
-      <section class="projects" id="projects">
-        <section class="section__center">
-          <h2 class="projects__title">My Personal Projects</h2>
+      <section class="section projects" id="projects">
+        <section class="section__title">
+          <h2 class="projects__title">Projects</h2>
           <div class="underline"></div>
+        </section>
+        <section class="section__center">
           <section class="projects__container">
             <article class="projects__card">
-              <img
-                src="/frontend__bootcamp.png"
-                alt="project 1"
-                class="projects__image"
-              />
-
-              <div class="projects__btn__group">
-                <a
-                  href="https://frontend-bootcamp-bootstrap5.vercel.app/"
-                  target="_blank"
-                  class="btn--demo"
-                  >Live Demo</a
-                >
-                <a
-                  href="https://github.com/sameerahmed976/frontend-bootcamp-bootstrap5"
-                  target="_blank"
-                  class="btn--code"
-                >
-                  <i class="fab fa-github-square btn--github"></i> Source
-                  Code</a
-                >
+              <div class="projects__card__inner">
+                <div class="projects__card__front">
+                  <img
+                    src="/frontend__bootcamp.png"
+                    alt="project 1"
+                    class="projects__image"
+                  />
+                </div>
+                <div class="projects__card__back">
+                  <div class="projects__btn__group">
+                    <a
+                      href="https://frontend-bootcamp-bootstrap5.vercel.app/"
+                      target="_blank"
+                      class="btn--demo"
+                      >Live Demo</a
+                    >
+                    <a
+                      href="https://github.com/sameerahmed976/frontend-bootcamp-bootstrap5"
+                      target="_blank"
+                      class="btn--code"
+                    >
+                      <i class="fab fa-github-square btn--github"></i> Source
+                      Code</a
+                    >
+                  </div>
+                </div>
               </div>
             </article>
             <article class="projects__card">
-              <img
-                src="/resume-sameer.png"
-                alt="sameer resume"
-                class="projects__image"
-              />
-
-              <div class="projects__btn__group">
-                <a
-                  href="https://resume-sameer.netlify.app/"
-                  target="_blank"
-                  class="btn--demo"
-                  >Live Demo</a
-                >
-                <a
-                  href="https://github.com/sameerahmed976/resume-sameer"
-                  target="_blank"
-                  class="btn--code"
-                >
-                  <i class="fab fa-github-square btn--github"></i> Source
-                  Code</a
-                >
+              <div class="projects__card__inner">
+                <div class="projects__card__front">
+                  <img
+                    src="/resume-sameer.png"
+                    alt="sameer resume"
+                    class="projects__image"
+                  />
+                </div>
+                <div class="projects__card__back">
+                  <div class="projects__btn__group">
+                    <a
+                      href="https://resume-sameer.netlify.app/"
+                      target="_blank"
+                      class="btn--demo"
+                      >Live Demo</a
+                    >
+                    <a
+                      href="https://github.com/sameerahmed976/resume-sameer"
+                      target="_blank"
+                      class="btn--code"
+                    >
+                      <i class="fab fa-github-square btn--github"></i> Source
+                      Code</a
+                    >
+                  </div>
+                </div>
               </div>
             </article>
           </section>
@@ -235,12 +288,12 @@
 
       <!-- contact -->
 
-      <section class="contact" id="contact">
-        <section class="section__center">
-          <h3 class="contact__title">Get In <strong>Touch</strong></h3>
-
+      <section class="contact section" id="contact">
+        <section class="section__title">
           <h2 class="contact__heading">Contact Me</h2>
           <div class="underline"></div>
+        </section>
+        <section class="section__center">
           <form
             class="form"
             action="https://formspree.io/f/xgebwqvy"
@@ -292,18 +345,26 @@
       <div class="slide__top"><i class="fas fa-arrow-circle-up"></i></div>
     </main>
 
-    <footer class="footer">
+    <footer class="section footer">
       <section class="footer__container">
-        <ul class="social__icons footer__center">
+        <ul class="footer__navbar__links">
+          <li><a href="#home" class="scroll__link">Home</a></li>
+          <li><a href="#about" class="scroll__link">About</a></li>
+          <li><a href="#skills" class="scroll__link">Skills</a></li>
+          <li><a href="#projects" class="scroll__link">Projects</a></li>
+          <li><a href="#contact" class="scroll__link">Contact</a></li>
+        </ul>
+
+        <ul class="footer__links footer__center">
           <li>
-            <a href="https://github.com/sameerahmed976" class="social__icon">
+            <a href="https://github.com/sameerahmed976" class="resume__icon">
               <i class="fab fa-github-square"></i>
             </a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/mohammed-sameer-ahmed976/"
-              class="social__icon"
+              class="resume__icon"
             >
               <i class="fab fa-linkedin"></i>
             </a>
@@ -311,7 +372,7 @@
           <li>
             <a
               href="https://www.facebook.com/sameer.ahmed.9763"
-              class="social__icon"
+              class="resume__icon"
             >
               <i class="fab fa-facebook-square"></i>
             </a>
@@ -319,21 +380,12 @@
           <li>
             <a
               href="https://www.instagram.com/sameer_976/"
-              class="social__icon"
+              class="resume__icon"
             >
               <i class="fab fa-instagram-square"></i>
             </a>
           </li>
         </ul>
-
-        <!-- 
-      <ul class="footer__links">
-        <li><a href="/">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul> -->
 
         <p class="footer__text">
           © <span class="date"></span> Built By Sameer. All Rights Reserved
