@@ -193,7 +193,7 @@ p {
 /* underline end */
 
 .section {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .section__title {
@@ -791,6 +791,13 @@ p {
 
 /* form end */
 
+/* contact */
+.background__image {
+  display: none;
+}
+
+/*  end of  contact */
+
 // ! /*  footer */
 
 .footer {
@@ -930,7 +937,28 @@ p {
   }
 
   .form {
-    justify-content: start;
+    justify-content: center;
+  }
+
+  .btn--message {
+    width: 100%;
+  }
+
+  .section__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .background__image {
+    display: block;
+  }
+
+  .form__center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
