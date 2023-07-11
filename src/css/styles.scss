@@ -528,6 +528,30 @@ p {
 
 /* about end */
 
+/* key skills */
+.key {
+  background-color: var(--bg2);
+  &__title {
+    color: var(--accent2);
+  }
+
+  &__paragraph {
+    margin-bottom: 1rem;
+    & li {
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      list-style: square;
+      font-size: var(--font-size-h4);
+    }
+  }
+  &__heading {
+    color: var(--accent2);
+    margin-bottom: 1rem;
+  }
+}
+
+/* end of  key skills */
+
 /* skills */
 
 // ! /* Skills */
