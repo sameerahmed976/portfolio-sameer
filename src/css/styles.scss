@@ -193,7 +193,7 @@ p {
 /* underline end */
 
 .section {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .section__title {
@@ -267,7 +267,7 @@ p {
   margin: 0 auto;
 }
 .nav-header {
-  height: 6rem;
+  height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -959,6 +959,8 @@ p {
   .form__center {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: start;
   }
 }
 
